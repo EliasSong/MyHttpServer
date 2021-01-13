@@ -1,0 +1,12 @@
+2021-01-13 01:18:00 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 01:18:00 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 01:18:00 Client IP: 192.168.8.1 Method: GET URL: /photo.jpg
+2021-01-13 01:18:00 Client IP: 192.168.8.1 Method: GET URL: /index.js
+2021-01-13 01:19:02 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 01:19:02 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 01:19:02 Client IP: 192.168.8.1 Method: GET URL: /photo.jpg
+2021-01-13 01:19:02 Client IP: 192.168.8.1 Method: GET URL: /index.js
+2021-01-13 01:19:11 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 01:19:11 Client IP: 192.168.8.1 Method: GET URL: /photo.jpg
+2021-01-13 01:19:11 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 01:19:11 Client IP: 192.168.8.1 Method: GET URL: /index.js
