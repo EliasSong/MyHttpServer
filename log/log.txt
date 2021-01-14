@@ -27,3 +27,11 @@
 2021-01-13 19:46:45 Client IP: 192.168.8.1 Method: GET URL: /
 2021-01-13 19:46:45 Client IP: 192.168.8.1 Method: GET URL: /index.css
 2021-01-13 19:46:46 Client IP: 192.168.8.1 Method: GET URL: /favicon.ico
+2021-01-13 22:52:41 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 22:52:41 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 22:53:03 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 22:53:03 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 22:53:03 Client IP: 192.168.8.1 Method: GET URL: /favicon.ico
+2021-01-13 23:02:26 Client IP: 192.168.8.1 Method: GET URL: /
+2021-01-13 23:02:26 Client IP: 192.168.8.1 Method: GET URL: /index.css
+2021-01-13 23:02:26 Client IP: 192.168.8.1 Method: GET URL: /favicon.png

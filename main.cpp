@@ -4,25 +4,21 @@
 #include<event2/keyvalq_struct.h>
 #include<event2/buffer.h>
 #include "Connection.h"
+#include "MyConf.h"
 using namespace std;
 
 
 void http_cb(struct evhttp_request *request, void *arg) {
-	// Connection *conn = new Connection();
-    // conn->setRequest(request);
 	MyThreadPool::getInstance() -> dispath(request);
-
 }
 int main(){
-
-    auto c = MyThreadPool::getInstance();
-    c->init(10);
-
+	auto conf = MyConf::getInstance();
+    MyThreadPool::getInstance()->init(conf->THREAD_NUM);
     event_base *base = event_base_new();
 	//创建http上下文
 	evhttp *evh = evhttp_new(base);
 	//绑定端口ip
-	if (evhttp_bind_socket(evh,"0.0.0.0",8080) != 0){
+	if (evhttp_bind_socket(evh,"0.0.0.0",conf->PORT) != 0){
 		cout<<"Libevent bind failed"<<endl;
 	}
 	//设定回调函数

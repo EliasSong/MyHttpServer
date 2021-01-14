@@ -72,9 +72,9 @@ void MyThreadPool::dispath(struct evhttp_request *request)
 
 MyThreadPool::~MyThreadPool()
 {
-    cout << "Destroy ThreadPool!!" << endl;
+    cout << "Destroy ThreadPool." << endl;
 }
 MyThreadPool::MyThreadPool()
 {
-    cout << "Construct ThreadPool!!" << endl;
+    cout << "Construct ThreadPool." << endl;
 }

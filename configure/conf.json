@@ -1,0 +1,7 @@
+{
+    "port":8080,
+    "thread_num":10,
+    "default_static_path" : "./common",
+    "default_index_file" : "/index.html",
+    "log_path" : "./log/log.txt"
+}

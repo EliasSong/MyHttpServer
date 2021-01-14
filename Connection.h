@@ -10,6 +10,7 @@
 #include "TypeFactory.h"
 #include <mutex>
 #include <time.h>
+#include "MyConf.h"
 using namespace std;
 
 string getCurrentTime()
@@ -26,6 +27,7 @@ class Connection
 public:
     void reply(struct evhttp_request *request);
     ~Connection() { cout << "Connection destory" << endl; }
+    Connection();
     string getMethod(struct evhttp_request *request);
     string getURL(struct evhttp_request *request);
     string getRemoteHost(struct evhttp_request *request);
@@ -33,9 +35,19 @@ public:
 private:
     mutex fileMutex;
     FILE *logFp = nullptr;
-    string basePath = "./common";
-    string logPath = "./log/log.txt";
+    string basePath = "";
+    string logPath = "";
+    string indexFilename = "";
 };
+
+Connection::Connection(){
+    auto conf = MyConf::getInstance();
+    basePath = conf->DEFAULT_STATIC_PATH;
+    logPath = conf->LOG_PATH;
+    indexFilename = conf->DEFAULT_INDEX_FILE;
+
+}
+
 string Connection::getMethod(struct evhttp_request *request)
 {
     string method = "";
@@ -85,7 +97,7 @@ void Connection::reply(struct evhttp_request *request)
     string file_path = basePath;
     if (uri.size() < 2)
     {
-        file_path += "/index.html";
+        file_path += indexFilename;
     }
     else
     {
