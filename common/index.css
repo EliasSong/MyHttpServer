@@ -1,43 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body {
+:root {
+    font-size: 32px;
+  }
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
-}
-
-h2 {
-    font-size: 6em;
-    font-weight: 500;
-    color: #222;
-    letter-spacing: 5px;
-    cursor: pointer;
-}
-
-h2 span {
-    transition: 0.5s;
-}
-
-h2:hover span:nth-child(1) {
-    margin-right: 10px;
-}
-
-h2:hover span:nth-child(1):after {
-    content: "'";
-}
-
-h2:hover span {
+    flex-direction: column;
+    background-color: #FFCD00;
+    font-family: 'Concert One', cursive;
+    
+    perspective: 2500px;
+  }
+  
+  h1, h2 {
+    padding: 0;
+    margin: 0;
+    position: relative;
     color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
-}
-
-h2:hover span:nth-child(2) {
-    margin-left: 40px;
-}
+  }
+  
+  img {
+    width: 100px;
+    margin-top: 60px;
+  }
+  
+  h1 {
+    font-size: 10rem;
+    animation: 5s rotate ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    0%, 100% {
+      transform: rotate3d(0, 1, 0, -20deg);
+    }
+    50% {
+      transform: rotate3d(0, 1, 0, 20deg);
+    }
+  }
+  
+  h2 {
+    font-size: 5rem;
+    letter-spacing: -4px;
+    animation: 2.5s thank-you ease-in-out infinite;
+  }
+  
+  @keyframes thank-you {
+    0%, 100% {
+      transform: rotate3d(1, 0, 0, -10deg);
+    }
+    50% {
+      transform: rotate3d(1, 0, 0, 10deg);
+    }
+  }
+  
+  h1::before,
+  h1::after {
+    content: 'Welcome!';
+  }
+  
+  h2::before,
+  h2::after {
+    content: 'Thank you!';
+  }
+  
+  h1::before,
+  h1::after,
+  h2::before,
+  h2::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Fix Chrome Issue */
+  h1::after,
+  h2::after {
+    z-index: -2;
+  }
+  /*  */
+  
+  h1::before {
+    color: #009CDE;
+    animation: 5s h1-before ease-in-out infinite;
+  }
+  
+  @keyframes h1-before {
+    0%, 100% {
+      transform: translate3d(15px, 5px, -10px);
+    }
+    50% {
+      transform: translate3d(-15px, 5px, -10px);
+    }
+  }
+  
+  h1::after {
+    color: #003C71;
+    animation: 5s h1-after ease-in-out infinite;
+  }
+  
+  @keyframes h1-after {
+    0%, 100% {
+      transform: translate3d(30px, 10px, -20px);
+    }
+    50% {
+      transform: translate3d(-30px, 10px, -20px);
+    }
+  }
+  
+  h2::before {
+    color: #009CDE;
+    animation: 2.5s h2-before ease-in-out infinite;
+  }
+  
+  @keyframes h2-before {
+    0%, 100% {
+      transform: translate3d(0px, 6px, -10px);
+    }
+    50% {
+      transform: translate3d(0px, -3px, -10px);
+    }
+  }
+  
+  h2::after {
+    color: #003C71;
+    animation: 2.5s h2-after ease-in-out infinite;
+  }
+  
+  @keyframes h2-after {
+    0%, 100% {
+      transform: translate3d(0px, 12px, -20px);
+    }
+    50% {
+      transform: translate3d(0px, -6px, -20px);
+    }
+  }

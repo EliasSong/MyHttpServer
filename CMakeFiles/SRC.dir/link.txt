@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSRC.a  CMakeFiles/SRC.dir/Connection.cpp.o CMakeFiles/SRC.dir/MyConf.cpp.o CMakeFiles/SRC.dir/MyThread.cpp.o CMakeFiles/SRC.dir/MyThreadPool.cpp.o CMakeFiles/SRC.dir/TypeFactory.cpp.o CMakeFiles/SRC.dir/main.cpp.o
+/usr/bin/ranlib libSRC.a

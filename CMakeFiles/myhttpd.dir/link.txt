@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/myhttpd.dir/main.cpp.o  -o myhttpd -Wl,-rpath,/usr/local/lib libSRC.a -lpthread /usr/local/lib/libevent.so 
