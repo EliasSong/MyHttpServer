@@ -1,4 +1,0 @@
-/home/eliassong/Desktop/MyHttpServer/CMakeFiles/rebuild_cache.dir
-/home/eliassong/Desktop/MyHttpServer/CMakeFiles/edit_cache.dir
-/home/eliassong/Desktop/MyHttpServer/CMakeFiles/SRC.dir
-/home/eliassong/Desktop/MyHttpServer/CMakeFiles/myhttpd.dir
