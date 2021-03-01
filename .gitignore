@@ -2,5 +2,6 @@ myhttpd
 Makefile
 CMakeFiles/
 cmake_install.cmake
+libSRC.a
 CMakeCache.txt
 Makefile
