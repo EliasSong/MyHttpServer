@@ -27,11 +27,12 @@ A simple http server implementation that can host static pages
 ### Compile：
 
 ```
+cmake .
 make
 ```
 
 ### Run:
 
 ```
-nohup ./main &
+./myhttpd
 ```
