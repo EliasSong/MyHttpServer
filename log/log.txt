@@ -1,42 +1,12 @@
-2021-02-27 21:04:39 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:04:39 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:04:39 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:09:07 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:09:07 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:09:07 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:26:11 Client IP: 127.0.0.1 Method: GET URL: /
-2021-02-27 21:26:11 Client IP: 127.0.0.1 Method: GET URL: /index.css
-2021-02-27 21:26:12 Client IP: 127.0.0.1 Method: GET URL: /favicon.png
-2021-02-27 21:26:26 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:26:26 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:26:26 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:30:07 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:30:07 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:30:07 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:30:11 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:30:11 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:30:11 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:30:22 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:30:22 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:30:22 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:30:33 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:30:33 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:30:33 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:30:41 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:30:41 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:30:41 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:31:13 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:31:13 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:31:13 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:34:52 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:34:52 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:34:52 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:35:01 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:35:01 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:35:01 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:35:30 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 21:35:30 Client IP: 192.168.17.1 Method: GET URL: /index.css
-2021-02-27 21:35:30 Client IP: 192.168.17.1 Method: GET URL: /favicon.png
-2021-02-27 21:36:04 Client IP: 192.168.17.1 Method: GET URL: /photo.jpg
-2021-02-27 22:06:58 Client IP: 192.168.17.1 Method: GET URL: /
-2021-02-27 22:06:58 Client IP: 192.168.17.1 Method: GET URL: /index.css
+2021-03-01 00:33:06	106331[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /
+ 
+2021-03-01 00:33:06	106332[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /index.css
+ 
+2021-03-01 00:33:06	106333[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /favicon.png
+ 
+2021-03-01 00:33:07	106334[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /
+ 
+2021-03-01 00:33:07	106335[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /index.css
+ 
+2021-03-01 00:33:07	106336[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /favicon.png
+ 

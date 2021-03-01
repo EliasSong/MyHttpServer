@@ -1,17 +1,9 @@
 #include "Connection.h"
 
-string getCurrentTime() {
-    time_t timep;
-    time(&timep);
-    char tmp[64];
-    strftime(tmp, sizeof(tmp), "%Y-%m-%d %H:%M:%S", localtime(&timep));
-    return tmp;
-}
-
 Connection::Connection() {
     auto conf = MyConf::getInstance();
     basePath = conf->DEFAULT_STATIC_PATH;
-    logPath = conf->LOG_PATH;
+    //logPath = conf->LOG_PATH;
     indexFilename = conf->DEFAULT_INDEX_FILE;
 }
 
@@ -41,20 +33,16 @@ string Connection::getRemoteHost(struct evhttp_request *request) {
 
 void Connection::reply(struct evhttp_request *request) {
     fileMutex.lock();
-    logFp = fopen(logPath.c_str(), "a+");
-    if (!logFp) {
-        cerr << "Log File open failed!" << endl;
-        fileMutex.unlock();
-        return;
-    }
+
     string method = getMethod(request);
+
     if (method.size() < 1) {
         cerr << "Method parse failed" << endl;
         fileMutex.unlock();
         return;
     }
     string uri = getURL(request);
-    string log = getCurrentTime() + " Client IP: " + getRemoteHost(request) +
+    string log = " Client IP: " + getRemoteHost(request) +
                  " Method: " + getMethod(request) + " URL: " + uri + "\n";
     char buf[1024] = {0};
     string file_path = basePath;
@@ -83,10 +71,8 @@ void Connection::reply(struct evhttp_request *request) {
         if (len <= 0) break;
         evbuffer_add(outbuf, buf, len);
     }
-    fputs(log.c_str(), logFp);
     fclose(fp);
-    fclose(logFp);
-    logFp = nullptr;
+    PANGTAO_LOG_DEBUG(PANGTAO_ROOT_LOGGER, log);
     fileMutex.unlock();
     evhttp_send_reply(request, HTTP_OK, "", outbuf);
 }

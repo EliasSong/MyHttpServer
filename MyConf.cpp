@@ -1,7 +1,6 @@
 #include "MyConf.h"
 
 MyConf::MyConf(){
-    cout<<"Construct configure"<<endl;
     ifstream jsonFile(confPath);
     if(!jsonFile){
         cout<<"Configure failed"<<endl;

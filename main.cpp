@@ -10,12 +10,20 @@
 #include "Connection.h"
 #include "MyConf.h"
 #include "MyThreadPool.h"
+#include "log.h"
 using namespace std;
 
 void http_cb(struct evhttp_request *request, void *arg) {
     MyThreadPool::getInstance()->dispath(request);
 }
 int main() {
+    auto conf = MyConf::getInstance();
+
+    auto logger = PangTao::LoggerManager::getInstance()->getRoot();
+    logger->setLevel(PangTao::LogLevel::DEBUG);
+    logger->addAppender(PangTao::LogAppender::ptr(
+        new PangTao::FileLogAppender(conf->LOG_PATH)));
+
     pid_t pid;
     pid = fork();
     if (pid > 0) {
@@ -36,7 +44,6 @@ int main() {
     dup2(fd, STDOUT_FILENO);
     dup2(fd, STDERR_FILENO);
 
-    auto conf = MyConf::getInstance();
     MyThreadPool::getInstance()->init(conf->THREAD_NUM);
     event_base *base = event_base_new();
     //创建http上下文

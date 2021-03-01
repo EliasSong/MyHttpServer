@@ -7,13 +7,14 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
+
 #include <iostream>
 #include <mutex>
+
 #include "MyConf.h"
 #include "TypeFactory.h"
+#include "log.h"
 using namespace std;
-
-string getCurrentTime();
 
 class Connection {
    public:
@@ -26,8 +27,8 @@ class Connection {
 
    private:
     mutex fileMutex;
-    FILE *logFp = nullptr;
+    // FILE *logFp = nullptr;
     string basePath = "";
-    string logPath = "";
+    //string logPath = "";
     string indexFilename = "";
 };
