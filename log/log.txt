@@ -1,12 +1,3 @@
-2021-03-01 00:33:06	106331[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /
- 
-2021-03-01 00:33:06	106332[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /index.css
- 
-2021-03-01 00:33:06	106333[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /favicon.png
- 
-2021-03-01 00:33:07	106334[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /
- 
-2021-03-01 00:33:07	106335[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /index.css
- 
-2021-03-01 00:33:07	106336[0]	[DEBUG] /home/elias/Desktop/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /favicon.png
- 
+2021-04-08 02:24:05	38771[0]	[DEBUG] /home/elias/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: / 
+2021-04-08 02:24:05	38772[0]	[DEBUG] /home/elias/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /index.css 
+2021-04-08 02:24:05	38773[0]	[DEBUG] /home/elias/MyHttpServer/Connection.cpp [root]:75	 Client IP: 192.168.18.1 Method: GET URL: /favicon.png 

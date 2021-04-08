@@ -43,7 +43,7 @@ void Connection::reply(struct evhttp_request *request) {
     }
     string uri = getURL(request);
     string log = " Client IP: " + getRemoteHost(request) +
-                 " Method: " + getMethod(request) + " URL: " + uri + "\n";
+                 " Method: " + getMethod(request) + " URL: " + uri;
     char buf[1024] = {0};
     string file_path = basePath;
     if (uri.size() < 2) {
